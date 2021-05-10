@@ -1,7 +1,7 @@
 pipeline {
    agent any
       environment {
-         PATH='C:/Program Files/nodejs/;C:/Users/devteam/AppData/Roaming/npm'
+         PATH='C:/Program Files/Git/bin;C:/Program Files/nodejs/;C:/Users/devteam/AppData/Roaming/npm'
       }
    stages {
       stage('NPM Setup') {
