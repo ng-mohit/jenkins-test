@@ -6,19 +6,19 @@ pipeline {
    stages {
       stage('NPM Setup') {
       steps {
-         sh 'npm install'
+         bat 'npm install'
       }
    }
 
    stage('Angular Build') {
    steps {
-      sh 'npm run build --prod'
+      bat 'npm run build --prod'
      } 
   }
 
    stage('Angular Test Build') {
    steps {
-      sh 'ng test'
+      bat 'ng test'
    }
   }
 
